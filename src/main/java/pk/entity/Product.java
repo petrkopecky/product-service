@@ -14,8 +14,6 @@ public class Product {
     private String name;
     private Double price;
     private String description;
-    @ManyToMany(mappedBy = "products")
-    private List<Order> orders;
 
     public Long getId() {
         return id;
@@ -49,13 +47,6 @@ public class Product {
         this.description = description;
     }
 
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
 
 
     @Override

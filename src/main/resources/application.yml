@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/eshop-db
+    url: jdbc:postgresql://db:5432/product-db
     username: postgres
     password: postgres
   jpa:
@@ -12,5 +12,5 @@ spring:
 
 logging:
   level:
-    root: debug
+    root: info
 
