@@ -20,6 +20,7 @@ services:
     image: product-service
     networks:
       - enet
+      - web
     ports:
       - "8081:8080"
     depends_on:
@@ -31,3 +32,5 @@ volumes:
 networks:
   enet:
     driver: bridge
+  web:
+    name: shared-web
